@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+</head>
+
+<body>
+    <div class="header"><div class="header-title">To Read List</div>
+    <button id="newBookBtn" class="new-book">Add New Book</button></div>
+   
+     
+        <form id="newBookForm" style="display: none;">
+            <div><label for="title">What is the title?</label></div>
+            <div><input class="type-input" type="text" id="title" required></div>
+            <div><label for="author">Who wrote it?</label></div>
+            <div><input class="type-input" type="text" id="author" required></div>
+            <div><label for="pages">How thick is the book?</label></div>
+            <div><input class="type-input" type="number" id="pages" required></div>
+            <span>Did you read it? </span><input type="checkbox" id="read">
+            <input type="submit" id="subBtn" value="Add Book">
+        </form>
+        <main>
+  <div id="library"></div>
+    </main>
+    <script src="library.js"></script>
+</body >
+</html >
